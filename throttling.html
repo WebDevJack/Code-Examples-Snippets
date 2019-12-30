@@ -1,0 +1,27 @@
+<!--
+
+  Throttling the execution of scripts attached to "scroll" DOM events. Drastically reduces load on JS engine, as scroll events 
+  can trigger many times on one scroll, E.G on mobile. Throttling limits the amount of times the event can trigger per a set time.
+  
+  The below combines the throttling concept, with an API that allow elements to be slide on when they are in the window "view" (scroll).
+
+-->
+<script>
+
+function callbackFunc(){
+  //check if some divs are in view, bring them into view with CSS animations.
+  if () {
+    // add css aimations to move in.
+  }
+}
+
+function test(){
+  // call the function ever 100 miliseconds (0.1 secs) to throttle scroll event.
+  setInterval(callbackFunc, 100);
+};
+
+//get all elements with classname, use ES6 spread (...) to convert to array, then loop through adding event listener to each.
+var ele = [...document.querySelectorAll(".waiting")];
+ele.forEach(item => { item.addEventListener("scroll", test); } );
+
+</script>
