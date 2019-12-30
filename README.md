@@ -9,8 +9,8 @@ This Repo will be updated at regular intervals.
 ```
 Some of these examples include;
 
-[Parralax design] - Web Design (background-image)
-[Throttling] - JS throttling on DOM events.
+[Parralax design]() - Web Design (background-image)
+[Throttling]() - JS throttling on DOM events.
 
 For the future;
 
