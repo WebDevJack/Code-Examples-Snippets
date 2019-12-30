@@ -1,0 +1,36 @@
+<!-- 
+
+  PARRALAX: Image used as background-image, with a background-attachment: fixed postion. This gives the illusion that the image is moving 
+  when you scroll down the page to view other page elemetns such as divs. Commonly used as full page width, and seperated with blocks of
+  divs with solid colour backgrounds such as white.
+
+-->
+<html>
+<head>
+</head>
+<body>
+<style>
+  .the-parralax {
+    background-image: URL("https://picsum.photos/1000/800");
+    background-postiion: cover; /* or center */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
+  
+  .normal-div {
+    height: 1000px;
+    background-color: white;
+    color: black;
+  }
+  
+  .normal-div p {
+    font-size: 26px;
+    font-family: sans-serif;
+    margin-top: 40%;
+  }
+</style>
+<div class="the-parralax"></div>
+<div class="normal-div"><p>Lorem Ipsum Solor Sit Amet.</p></div>
+<div class="the-parralax"></div>
+</body>
