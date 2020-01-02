@@ -6,8 +6,6 @@
 
 */
 
-<script>
-
 $(document).ready( function() {
 
 	$.fn.inViewport = function() {
@@ -26,5 +24,3 @@ $(document).ready( function() {
 	};
   
  });
-
-</script>
