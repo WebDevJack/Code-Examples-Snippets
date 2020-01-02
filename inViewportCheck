@@ -14,7 +14,7 @@ $(document).ready( function() {
 	// $.fn. adds function to JQUERY, so it can be used in its syntax E.G $(".someDiv").inViewport() - returns true || false"
   
 		let eleTop          =   $(this).offset().top,
-			  viewportTop     =   $(window).scrollTop(),
+		    viewportTop     =   $(window).scrollTop(),
 		    eleBottom       =   $(this).outerHeight() + eleTop,
 		    viewportBottom  =   viewportTop + $(window).height(); // <!DOCTYPE html> must be set
 			
