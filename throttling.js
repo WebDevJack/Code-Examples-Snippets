@@ -8,13 +8,19 @@
 */
 
   
-let throttling = (someFunc, milliSecs) => {
-  // function you want to throttle + time in millisecs
-  let time = Date.now();
+let throttling = (someFunc, delay) => {
+  // function you want to throttle + delayed time in millisecs e.g 1000
+  let storedTime = Date.now();
   return () => {
-    if ((time + milliSecs - Date.now()) < 0) {
+    if ((storedTime + delay - Date.now()) < 0) {
       someFunc();
-      time = Date.now();
+      storedTime = Date.now();
     }
   }
 }
+
+$(window).scroll(throttling(myFunc, 1000)); // JQUERY
+
+/* or */
+
+window.addEventListener("scroll", throttling(myFunc, 1000)); // Native JS
