@@ -7,6 +7,9 @@
 
 */
 
+let myFunc = () => { 
+  console.log("throttled event"); 
+};
   
 let throttling = (someFunc, delay) => {
   // function you want to throttle + delayed time in millisecs e.g 1000
@@ -16,8 +19,17 @@ let throttling = (someFunc, delay) => {
       someFunc();
       storedTime = Date.now();
     }
-  }
-}
+  };
+};
+
+/* Without Throttling!
+
+$(window).scroll(myFunc); // JQUERY
+window.addEventListener("scroll", myFunc); // Native JS
+
+*/
+
+// With Throttling
 
 $(window).scroll(throttling(myFunc, 1000)); // JQUERY
 
