@@ -5,4 +5,4 @@ A budget controller application, created in conjuction with an UDEMY JavaScript 
 # Outstanding work required;
 
 UI/UX Enhancements\
-Update global budget modules\
+Update global budget modules
