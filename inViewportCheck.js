@@ -1,7 +1,8 @@
 /*
 
-  JQUERY function: Checks if an element is in the current DOM viewport (1000 px box), then returns true / false.
-  Add to a window.scroll() DOM event to run when user scrolls page, then do something. E.G fade in elements.
+  JQUERY function: Checks if an element is in the current DOM viewport then returns true / false.
+  
+  Tip: Add to a window.scroll() DOM event to run when user scrolls page, then do something. E.G fade in elements.
 
 */
 
