@@ -12,7 +12,10 @@ $(document).ready( function() {
 
 	$.fn.inViewport = function() {
   
-	// $.fn. adds function to JQUERY, so it can be used in its syntax E.G $(".someDiv").inViewport() - returns true || false"
+	/* 
+		$.fn. adds the function to JQUERY, so that the "this" keyword refers to 
+		the root element where the function is called: $(".someDiv").inViewport()"	    
+	*/
   
 		let eleTop          =   $(this).offset().top,
 		    viewportTop     =   $(window).scrollTop(),
