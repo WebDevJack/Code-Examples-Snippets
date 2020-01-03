@@ -20,4 +20,4 @@ Improved CSS transitions.\
 Flashing tab (page title)\
 PHP contact form\
 PHP prepared statements (data sanitisation).\
-IIFE & Closures\
+IIFE & Closures
