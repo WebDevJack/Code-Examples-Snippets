@@ -1,0 +1,41 @@
+<!-- Oscillating 'floating' elements based off this codepen example: https://codepen.io/mrsilenteye/pen/NWPpPBg -->
+
+<!-- With multiple floating elements, postision them apart using top: ??, and left: ??, css positions to appear staggered.
+
+<style>
+
+.floaties {
+
+  display: block;
+  width: 100px;
+  height: 25px;
+  background-colour: grey;
+  color: white;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  
+  transform: translatex(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.floaties:nth-child(even) {
+  top: 50%;
+  left: 90%;
+}
+
+@keyframes float {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+</style>
+
+  <div class="floaties"></div>
+  <div class="floaties"></div>
+  <div class="floaties"></div>
+  <div class="floaties"></div>
