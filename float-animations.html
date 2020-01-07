@@ -2,40 +2,87 @@
 
 <!-- With multiple floating elements, postision them apart using top: ??, and left: ??, css positions to appear staggered. -->
 
-<style>
+<!DOCTYPE HTML>
 
-.floaties {
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9a2eca72d9.js" crossorigin="anonymous"></script>
+</head>
 
-  display: block;
-  width: 100px;
-  height: 25px;
-  background-colour: grey;
-  color: white;
-  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-  
-  transform: translatex(0px);
-  animation: float 6s ease-in-out infinite;
-}
+<body>
+  <style>
+    .floaties {
+      display: block;
+      position: relative;
+      width: 185px;
+      height: 30px;
+      background-color: #4e4e4e;
+      border-radius: 15px;
+      color: white;
+      box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.6);
+      left: 10%;
+      transform: translatex(0px);
+      animation: float 14s ease-in-out infinite;
+    }
 
-.floaties:nth-child(even) {
-  top: 50%;
-  left: 90%;
-}
+    .floaties:nth-child(even) {
+      left: 80%;
+      animation: float 10s ease-in-out infinite;
+    }
 
-@keyframes float {
-	0% {
-		transform: translatex(0px);
-	}
-	50% {
-		transform: translatex(-20px);
-	}
-	100% {
-		transform: translatex(0px);
-	}
-}
-</style>
+    @keyframes float {
+      0% {
+        transform: translatex(0px);
+      }
 
-  <div class="floaties"></div>
-  <div class="floaties"></div>
-  <div class="floaties"></div>
-  <div class="floaties"></div>
+      50% {
+        transform: translatex(-90px);
+      }
+
+      100% {
+        transform: translatex(0px);
+      }
+    }
+
+    .tick-wrapper {
+      background-color: white;
+      color: #00c600;
+      width: 31px;
+      height: 30px;
+      border-radius: 15px;
+      border: 1px solid white;
+      font-size: 27px;
+    }
+
+    .tick-wrapper i {
+      left: 0;
+      top: 0;
+      position: absolute;
+      padding-left: 2px;
+      padding-top: 1px;
+    }
+
+    .info-wrapper {
+      font-family: "open sans";
+      color: white;
+    }
+  </style>
+  <div class="floaties my-2">
+    <div class="tick-wrapper float-left"><i class="fas fa-check-circle"></i></div>
+    <div class="float-left info-wrapper pl-3 pt-1">LOREM IPSUM</div>
+  </div>
+  <div class="floaties my-2">
+    <div class="tick-wrapper float-left"><i class="fas fa-check-circle"></i></div>
+    <div class="float-left info-wrapper pl-3 pt-1">LOREM IPSUM</div>
+  </div>
+  <div class="floaties my-2">
+    <div class="tick-wrapper float-left"><i class="fas fa-check-circle"></i></div>
+    <div class="float-left info-wrapper pl-3 pt-1">LOREM IPSUM</div>
+  </div>
+  <div class="floaties my-2">
+    <div class="tick-wrapper float-left"><i class="fas fa-check-circle"></i></div>
+    <div class="float-left info-wrapper pl-3 pt-1">LOREM IPSUM</div>
+  </div>
+</body>
