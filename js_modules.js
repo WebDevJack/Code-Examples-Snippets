@@ -1,3 +1,11 @@
+/* ----------------------------------------------------------------------
+
+      Although simple, the below is an example of JavaScript written in 
+      a module like structure using closures, and anonymous functions.
+      The below code applies an on-click event to scroll to a target.
+
+----------------------------------------------------------------------- */
+
 var myFunctions = (function() {
 
       var takeMeThere = function(elementID) {
