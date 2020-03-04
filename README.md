@@ -13,9 +13,9 @@ examples include;
 
 Parallax design - Web Design (background-image).\
 Throttling - JS throttling on DOM events.\
-InViewport - JQUERY Checks if element is in view.
+InViewport - JQUERY Checks if element is in view.\
 Slide-ins (UX)\
 Improved CSS transitions\
 Flashing tab (page title)\
 PHP form handling\
-Prepared statements (data sanitisation).\
+Prepared statements (data sanitisation).
