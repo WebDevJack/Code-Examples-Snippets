@@ -1,6 +1,6 @@
-#Public Repository
+# Public Repository
 
-## One and done, upload bits and peices to save time in the future!
+## One and done, upload bits and pieces to save time in the future!
 
 ## Hello There! 
 
