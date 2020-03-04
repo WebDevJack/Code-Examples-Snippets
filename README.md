@@ -1,23 +1,21 @@
-# Public Examples & Future Reference.
+#Public Repository
+
+## One and done, upload bits and peices to save time in the future!
 
 ## Hello There! 
 
-This GitHub Repo has been created for the purpose of displaying some examples of JS, PHP and CSS I have written for future reference.
+This GitHub Repo has been created for the purpose of displaying examples of JS, PHP and CSS I have written for future projects and for reference.
 
 ```
 This Repo will be updated at regular intervals.
 ```
-Some of these examples include;
+examples include;
 
-[Parallax design]() - Web Design (background-image).\
-[Throttling]() - JS throttling on DOM events.\
-[InViewport]() - JQUERY Checks if element is in view.
-
-For the future;
-
+Parallax design - Web Design (background-image).\
+Throttling - JS throttling on DOM events.\
+InViewport - JQUERY Checks if element is in view.
 Slide-ins (UX)\
-Improved CSS transitions.\
+Improved CSS transitions\
 Flashing tab (page title)\
-PHP contact form\
-PHP prepared statements (data sanitisation).\
-IIFE & Closures
+PHP form handling\
+Prepared statements (data sanitisation).\
