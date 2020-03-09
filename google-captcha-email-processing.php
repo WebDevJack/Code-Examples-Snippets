@@ -7,11 +7,6 @@
   This PHP script handles the validation of an email form using 
   google captcha v2. The form sends the user back to the index.php 
   page with a string of GET paramaters.
-  
-  Recomended: Use JavaScript DOM manipulation
-  to provide a UI/UX change based on these params 
-  E.G success message in green color, error in red etc.
-
 
 ------------------------------------------------------------------ */
 
@@ -25,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $this->name = $_POST['name'];
       $this->responseStr = $_POST['g-recaptcha-response'];
       $this->clientIP = $_SERVER["REMOTE_ADDR"];
-      $this->emailTo = "webdevjack.uk@gmail.com";
+      $this->emailTo = "your_email_here@domain.co.uk";
       $this->errors = array();
       $this->private = $privKey;
     }
@@ -52,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          if (empty($this->name)) { array_push($this->errors, "name%20error=true"); }
          if (!empty($this->errors)) {
            $getErrors = implode("&", $this->errors);
-           header("Location: https://webdevjack.co.uk/index.php?" . $getErrors);
+           header("Location: https://www.domain.co.uk/index.php?" . $getErrors);
          } else {
            $subject = "New Email from " . $this->name;
            $headers = array(
@@ -72,7 +67,14 @@ require "../google-captcha.php"; // store private key in this file, in variable 
 $init = new MailData($privKey);
 $init->sanitise();
 $init->sendMail();
-
+  
+  /* -------------------------------------------------------
+  
+      Recomended: Use JavaScript DOM manipulation
+      to provide a UI/UX changes based on these params 
+      E.G success message in green color, error in red etc.
+  
+  ---------------------------------------------------------*/
 }
 
 ?>
