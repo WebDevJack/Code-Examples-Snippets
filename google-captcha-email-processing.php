@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $this->name = $_POST['name'];
       $this->responseStr = $_POST['g-recaptcha-response'];
       $this->clientIP = $_SERVER["REMOTE_ADDR"];
-      $this->emailTo = "webdevjack.uk@gmail.com";
+      $this->emailTo = "your_email@domain.com";
       $this->errors = array();
       $this->private = $privKey;
     }
@@ -31,13 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     public function sendMail() {
        if (!empty($this->errors)) {
          $getErrors = implode("&", $this->errors);
-         header("Location: https://webdevjack.co.uk/index.php?" . $getErrors);
+         header("Location: https://www.domain.co.uk/index.php?" . $getErrors);
          exit();
        } else {
-         $subject = "WebDevJack: New Message from " . $this->name;
+         $subject = "New Message from " . $this->name;
          $headers = array('From' => $this->emailFrom, 'Reply-To' => $this->emailFrom);
          if (mail($this->emailTo, $subject, $this->message, $headers)) {
-           header("Location: https://webdevjack.co.uk/index.php?success");
+           header("Location: https://www.domain.co.uk/index.php?success");
          }
        }
     }
