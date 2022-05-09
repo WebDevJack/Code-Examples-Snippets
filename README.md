@@ -4,10 +4,10 @@
 
 ## Hello There! 
 
-This GitHub Repo has been created for the purpose of displaying examples of JS, PHP and CSS I have written for future projects and for reference.
+This GitHub Repo has been created for the purpose of displaying examples of stuff I have written for reference.
 
 ```
-This Repo will be updated at regular intervals.
+This Repo might be updated at regular intervals, prob not though lets be real :)
 ```
 examples include;
 
